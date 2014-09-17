@@ -1,0 +1,144 @@
+   <div class="container">
+      <div id="logo-login">
+         <img src="images/Logo.png" width="150px" alt="Profile Pic" />
+      </div> <!-- #logo -->
+      
+      <div id="selection">
+         <ul class="drop ul-registration bebold">
+            <li><span class="lightbluecolor">Personal Info</span></li>
+            <li><span class="greycolor">Select Program</span></li>
+            <li><span class="greycolor">Select Courses</span></li>
+            <li><span class="greycolor">Activation Code</span></li>
+         </ul>
+      </div><!-- #selection -->
+      <div id="Register-div">
+         <h1 class="Papyrys-font darkbluecolor">Registration</h1>
+         <h2 class="darkbluecolor">Join SOS today.</h2>
+         <div id="registration-form">
+            <form method="post" ng-submit="signup()" name="signupForm">
+               <div class="panel-body">
+                  <div class="form-group" ng-class="{  'has-success' : signupForm.fullname.$valid && signupForm.fullname.$dirty, 
+                                                         'has-error' : signupForm.fullname.$invalid && signupForm.fullname.$dirty }">
+                     <label for="fullname">Full name</label><br/>
+                     <input class="form-control input-lg" type="text" id="fullname" name="fullname" ng-model="fullname" placeholder="Full name" required ng-minlength="4" autofocus>
+                     <div class="help-block text-danger" ng-if="signupForm.fullname.$dirty" ng-messages="signupForm.fullname.$error">
+                       <div ng-message="required">Your full name is required...</div>
+                       <div ng-message="minlength">Your name is too short..</div>
+                     </div>
+                  </div>
+                  <div class="form-group" ng-class="{ 'has-success' : signupForm.email.$valid && signupForm.email.$dirty, 
+                                                   'has-error' : signupForm.email.$invalid && signupForm.email.$dirty }">
+                     <label for="email">Email</label><br/>
+                     <input class="form-control input-lg" type="email" id="email" name="email" ng-model="email" placeholder="Email" required ng-minlength="7" ng-maxlength="30">
+                     <div class="help-block text-danger" ng-if="signupForm.email.$dirty" ng-messages="signupForm.email.$error">
+                        <div ng-message="required">You forgot to enter your email address...</div>
+                        <div ng-message="minlength">Your email address is too short...</div>
+                        <div ng-message="maxlength">Your email address is too long...</div>
+                        <div ng-message="email">You did not enter your email address correctly...</div>
+                     </div>
+                  </div>
+                  <div class="form-group" ng-class="{ 'has-success' : signupForm.username.$valid && signupForm.username.$dirty, 
+                                                   'has-error' : signupForm.username.$invalid && signupForm.username.$dirty }">
+                     <label for="username">Username</label><br/>
+                     <input class="form-control input-lg" type="text" name="username" id="username" placeholder="Choose your own username" ng-model="username" ng-minlength='6' ng-maxlength='20' required /><br/>
+                     <div class="help-block text-danger" ng-if="signupForm.username.$dirty" ng-messages="signupForm.username.$error">
+                        <div ng-message="required">Your forgot to enter your username...</div>
+                        <div ng-message="minlength">Your username is too short...</div>
+                        <div ng-message="maxlength">Your username is too long...</div>
+                     </div>
+                  </div>
+                  <div class="form-group" ng-class="{ 'has-success' : signupForm.password.$valid && signupForm.password.$dirty, 
+                                                   'has-error' : signupForm.password.$invalid && signupForm.password.$dirty }">
+                     <label for="password">Create a password</label><br/>
+                     <input class="form-control input-lg" type="password" name="password" id="password" placeholder="Password"  ng-model="password" required ng-minlength='2' ng-maxlength='50' />
+                     <div class="help-block text-danger" ng-if="signupForm.password.$dirty" ng-messages="signupForm.password.$error">
+                        <div ng-message="required">Password is required.</div>
+                        <div ng-message="minlength">Your password is too short... </div>
+                        <div ng-message="maxlength">Your password is too long... </div>
+                     </div>
+                  </div>
+                  <div class="form-group" ng-class="{ 'has-success' : signupForm.confirmPassword.$valid && signupForm.confirmPassword.$dirty, 
+                                                'has-error' : signupForm.confirmPassword.$invalid && signupForm.confirmPassword.$dirty }">
+                     <label for="confirmPassword">Repeat your password</label><br/>
+                     <input class="form-control input-lg" type="password" name="confirmPassword" placeholder="Confirm Password"  ng-model="confirmPassword" required ng-minlength='2' pw-check="password"/>
+                     <div class="help-block text-danger" ng-if="signupForm.confirmPassword.$dirty" ng-messages="signupForm.confirmPassword.$error">
+                        <div ng-message="required">You must confirm password.</div>
+                       <div ng-message="minlength">Your password is too short... </div>
+                       <div ng-message="pwmatch">Passwords do not match.</div>
+                     </div>
+                  </div>    
+                  <div id="terms-and-conditions">
+                     <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                           <div class="panel-heading">
+                              <h4 class="panel-title">By moving to next section, you agree to the terms below</h4>
+                           </div> <!-- .panel-heading -->
+                           <div class="panel-body">
+                              <ul>
+                                 <li>Please read the terms in full before you use this Website.</li>
+                                 <li>If you do not accept these terms, please do not use this Website.</li>
+                                 <li>Using the Website implies that you accept these terms.</li>
+                                 <li>We do occasionally update these terms so please refer back to them in the future.</li>
+                              </ul>
+                              <ol>
+                                 <li>I never run out of cash. </li>
+                                 <li>I accomplish, learn, give and enjoy something every day. </li>
+                                 <li>My base of operations is always clean and organized. </li>
+                                 <li>For challenges, I improvise, adapt and overcome. </li>
+                                 <li>I dress up; even at home alone. </li>
+                                 <li>I eat vegetables, fruit, drink water, exercise and sleep. </li>
+                                 <li>I carry enough cash and credit to operate efficiently.</li>
+                                 <li>I chose my contacts carefully and avoid villains.</li>
+                                 <li>I never give up, but I can change direction.</li>
+                                 <li>I'm not afraid to pay for what I want. </li>
+                                 <li>I get good value for my time and money.  </li>
+                                 <li>I circulate all things good. The bad stops with me. </li>
+                                 <li>Everyone I meet benefits from the experience. </li>
+                                 <li>I am always early for meetings. </li>
+                                 <li>I edit out negative verbalizations. </li>
+                                 <li>On the job, I am always professional. </li>
+                                 <li>I am constantly learning by reading one book a week. </li>
+                                 <li>I tip freely like Bond.</li>
+                                 <li>My car is clean, filled up and ready to go.</li>
+                                 <li>I rent what I need and take mental possession of it. </li>
+                                 <li>I never run out of cash.</li>
+                              </ol>
+                           </div><!-- .panel-body -->
+                        </div><!-- .panel .panel-default -->
+                     </div><!-- #accordion -->           
+                  </div> <!-- #terms-and-conditions -->
+                  <div id="printable-versions">
+                     <span class="greycolor">Printable Version:</span><br/>
+                     - <a href="">Terms of Service</a><br/>
+                     - <a href="">Privacy</a><br/>
+                     - <a href="">Cookie Use</a>
+                  </div>  <!-- #printable-versions -->
+                  <br/>
+                  <button type="submit" class="btn-type2" ng-disabled="signupForm.$invalid">Select Program</button>
+               </div>
+            </form> 
+            <div id='footer-links' style="position: relative;
+                        top: 30px;
+                        width: 560px;
+                        left: -119px;" >
+               <a href="">About</a>
+               <a href="">Help</a>
+               <a href="">Terms</a>
+               <a href="">Privacy</a>
+               <a href="">Cookies</a>
+               <a href="">@2014 SOS</a>
+            </div>
+        </div><!-- #registration-form  -->         
+      </div><!-- #signup-div -->
+         
+     
+   </div><!-- .container -->
+	<script src="javascripts/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script>
+		(function($){
+         $("#accordion .panel-body").mCustomScrollbar({
+            setHeight:150,
+            theme:"dark-3"
+         });
+		})(jQuery);
+	</script>

@@ -1,0 +1,355 @@
+#navbar {
+   font-family: 'Open Sans',sans-serif;
+   font-weight: 500;
+   background: none repeat scroll 0% 0% #55A0D7;
+   position: fixed;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   height:40px;
+   margin-left:0px;
+   margin:0px;
+   z-index:11;
+}
+ul.drop {
+   list-style: none outside none;
+   margin:0;
+   margin-top:8px;
+}
+#navbar a:hover {
+   color: rgb(0, 204, 255);
+}
+#navbar a {
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+   font-size: 19px;
+}
+#navbar ul#main-menu li {
+   display: block;
+   position: relative;
+   float: left;
+   margin-right: 30px;
+}
+#navbar a:hover {
+   color: rgb(0, 204, 255);
+}
+#header ul#main-menu {
+   float: right;
+   width: 210px;
+   clear: right;
+}
+#logo{
+   position: fixed;
+   top: 51px;
+   left: 38px;
+}
+
+#menu{
+   display: block;
+   position: fixed;
+   float: left;
+   margin-right: 30px;
+   top: 172px;
+   left: 27px;
+   color: #6ABBE1;
+   font-family: "Open Sans",sans-serif;
+   font-weight: 500;
+}
+ul#menu-bar li{
+   padding-top: 10px;
+   font-size: 18px;
+}
+
+.li-clear{
+   color:black;
+   font-weight: 500;    
+}
+.menu-active{
+   color:#6ABBE1;
+   text-decoration: none;
+   font-weight: 500;
+}
+
+a.menu-active:hover,
+a.menu-active:focus
+{
+  
+}
+
+#menu img{
+   width: 30px;
+   padding-right: 15px;
+   margin-bottom: -5px;
+   float: left !important;
+}
+h1{
+   margin:0px;
+   font-weight: 200;
+   font-size: 24px;
+}
+.menu-div{
+   /*border: 1px solid #F00;*/
+   margin: 0px;
+   width: 177px;
+   padding-left: 10px;
+   position: relative;
+   margin-left: 50px;
+   height: 29px;
+}
+.menu-div:hover, .menu-div:focus, .menu-div2{
+   color:#104469;
+   background-color:#B0D3EF;
+   box-shadow: 5px 5px 5px #888888;
+   height: 25px;
+   padding-top: 4px;
+}
+
+
+#content{
+   /*border: 1px solid #F00;*/
+   width: 65%;
+   position: relative;
+   top: 50px;
+   left: 347px;
+   min-height: 500px;
+   padding: 3px;
+   padding-right: 10px;
+   font-family: "Open Sans",sans-serif;
+   font-size: 14px;
+}
+
+.Posts{
+   border: 2px solid #D8D8D8;
+   box-shadow: 5px 5px 1px #888;     
+   padding: 4px;
+   /*overflow: auto;*/
+   word-wrap: break-word;
+   margin-bottom: 12px;
+   padding-left: 20px;
+   padding-right: 20px;
+   display: block;
+   width: 860px;
+}
+
+.Posts h2{
+   color: #082F56;
+   font-weight: 300;
+   font-size: 30px;
+}
+.Post-footer{
+   height: 37px;
+}
+.Post-footer div{
+   border: 1px solid transparent;
+   width: 150px;
+   font-size: 15px;
+   color: #7F7F7F;
+   font-weight: 700;
+   position: relative;
+}
+.time-div{
+   top: 4px;
+   left: 17px;
+}
+.Splash1-div{
+   top: -17px;
+   left: 167px;
+}
+
+.course-div{
+   top: -38px;
+   left: 199px;
+}
+.public-private{
+   top: -65px;
+   left: 323px;
+}
+.flag-div{
+    top: -99px;
+    left: 434px;
+}
+
+.flag-div img{
+   width: 25px;   
+}
+
+.respond-div{
+    top: -133px;
+    left: 533px;
+    height: 26px;
+    background-image: url('Img/response.png');
+    padding-left: 43px;
+    padding-right: 0px;
+    background-repeat: repeat-y;
+    margin-top: 3px;
+}
+
+.archive-div{
+   top: -164px;
+   left: 690px;
+   background-image: url('Img/archive.png');
+   background-repeat: repeat-y;
+   height: 27px;
+   padding-left: 43px;
+   padding-right: 0px;
+   padding-top: 3px;
+}
+
+body{
+   font-family: "Open Sans",sans-serif;
+}
+
+
+ #logo-login{
+         position:relative;
+         width:150px;
+         position:relative;
+         display:block;
+      }
+      .container{
+         width:667px;
+         margin:auto;
+         display:block;
+         padding-top:50px;
+         height:500px;
+      }
+      #logo-login{
+
+      }
+      .header-welcome{
+         width: 200px;
+         margin-top: 30px;
+      }
+      .welcome-SOS, .new-to-SOS {
+         color: #2A2A2A;
+         font-size: 15px;
+         font-weight: bold;
+      }
+      .welcome{
+         width: 308px;
+         color: #53779A;
+         border-radius: 15px;
+         margin-top: 14px;
+         padding: 10px;
+         box-shadow: 0px 0px 15px 4px #D8D8D8;
+         -moz-box-shadow: 0px 0px 15px 4px #D8D8D8;
+         -webkit-box-shadow: 0px 0px 15px 4px #D8D8D8;
+         font-size: 15px;
+         font-weight: bold;
+         height: 71px;
+      }
+      a.light-blue{
+         color: #CEE3F4;
+         text-decoration: none;
+         position: relative;
+         top: 8px;
+      }
+      a.light-blue:focus, a.light-blue:hover,
+      a.bluecolor:focus, a.bluecolor:hover{
+         color:#5D7A95;
+         text-decoration: underline;
+      }
+      #login-div{
+         width: 327px;
+         position: relative;
+         min-height: 50px;
+         display: block;
+         top: -230px;
+         left: 396px;
+      }
+      #login-div h1{
+         font-size: 52px;
+         padding-bottom:20px;
+         
+      }
+      input#user-name{
+         width: 215px;
+      }
+      input#passwd{
+         width: 131px;
+         margin-bottom: 5px;
+      }
+      /* input#user-name, input#passwd{
+         border-radius: 4px;
+         padding: 4px;
+         transition: all 0.2s linear 0s;
+         box-shadow: rgba(34, 34, 34, 0.47);
+         border: none;
+         box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.68) inset;
+         margin-top: 5px;
+         padding-left:5px;
+         padding-right:5px;
+      }
+      
+      input#user-name:focus, input#passwd:focus {
+        box-shadow: 0 0 5px #2392f3;
+        outline: none;
+        color:black;
+      } */
+      
+      
+      #login-div button, #signup-div button{
+         background-color: #5EA2D2;
+         color: white;
+         border-radius: 6px;
+         padding: 4px;
+         width: 81px;
+         font-size: 12px;
+         font-weight: 600;
+         border:1px #5EA2D2 solid;
+         height: 26px;
+      }
+      #signup-div button{
+         margin-left: 70px;
+      }
+      #login-div button:hover, #signup-div button:hover
+      {
+         background-color: #fff;
+         color: #5EA2D2;
+         border-radius: 6px;
+      }
+      #signup-div{
+         position: relative;
+         width: 235px;
+         top: -207px;
+         right: 0px;
+         left: 396px;         
+      }
+      #signup-div hr{
+         position: relative;
+         top: -6px;
+         color:rgba(173, 173, 173, 0.5);
+      }
+      .greycolor{
+         color:#7B7B7B;
+         font-color:14px;
+      }
+
+      #rmr-me, a.bluecolor{
+         font-size:14px;
+      }
+      .bluecolor{
+         color:#82ABBA;
+         text-decoration:none;
+      }
+      #footer-links{
+         position: relative;
+         margin: auto;
+         top: -147px;
+         width: 583px;
+      }
+      #footer-links a{
+         margin:20px;
+         color:black;
+         text-decoration:none;
+         font-size:13.5px;
+      }
+       #footer-links a:hover{
+         text-decoration:underline;
+       }
+      .crt-ver-scro{
+         position: relative;
+         width: 369px;
+         height: 138px;
+         border-right: 1px solid rgba(173, 173, 173, 0.5);;
+      }

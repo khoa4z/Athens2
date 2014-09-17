@@ -1,0 +1,49 @@
+<div class="container">
+      <div id="logo-login">
+         <img src="images/Logo.png" width="150px" alt="Profile Pic" />
+      </div> <!-- #logo -->
+      <div class="header-welcome">
+         <h1 class="welcome-SOS">Welcome to SOS!</h1>
+      </div><!-- .header-welcome -->
+      <div class="crt-ver-scro">
+      <div class="welcome stay-right">
+         Connect with your schoolmates and easily get answers to all your questions.<br/>
+         <a href="" class="light-blue">Learn more</a>
+      </div><!-- .welcome .stay-right -->
+      </div>
+      <div id="login-div">
+         <h1 class="Papyrys-font darkbluecolor">Log In</h1>
+         <form method="post" data-ng-submit="login()" name="loginForm">
+            <div class="form-group" ng-class="{  'has-success' : loginForm.username.$valid && loginForm.username.$dirty, 
+                                                'has-error' : loginForm.username.$invalid && loginForm.username.$dirty }">
+               <input class="form-control input-lg" type="text" id="username" name="username" ng-model="username" placeholder="Username or email" required autofocus><br/>   
+               <div class="help-block text-danger" ng-if="loginForm.username.$dirty" ng-messages="loginForm.username.$error">
+                <div ng-message="required">Your forgot to enter your username...</div>
+               </div>
+            </div>
+            <div class="form-group" ng-class="{ 'has-success' : loginForm.password.$valid && loginForm.password.$dirty, 
+                                              'has-error' : loginForm.password.$invalid && loginForm.password.$dirty }">
+               <input class="form-control input-lg" type="password" name="password" id="passwd" placeholder="Password"  ng-model="password" required />
+               <button type="submit" ng-disabled="loginForm.$invalid">Sign In</button><br/>
+               <div class="help-block text-danger" ng-if="loginForm.password.$dirty" ng-messages="loginForm.password.$error">
+                  <div ng-message="required">Your forgot to enter your password...</div>
+               </div>
+            </div>
+            <input type="checkbox" name="rmr-me" id="rmr-me" value="Remember-me"> <label for="rmr-me"><span class="greycolor">Remember me</span></label> -
+            <a href="" class="bluecolor">Forgot password?</a>
+         </form>
+      </div><!-- #login-div -->
+      <div id="signup-div">
+         <h1 class="new-to-SOS">New to SOS ? <span class="greycolor">Sign up</span></h1>
+         <hr/>
+            <button onclick="location.href='/#/register'">Sign up</button>
+      </div><!-- #signup-div -->
+      <div id='footer-links'>
+         <a href="">About</a>
+         <a href="">Help</a>
+         <a href="">Terms</a>
+         <a href="">Privacy</a>
+         <a href="">Cookies</a>
+         <a href="">@2014 SOS</a>
+      </div>
+   </div><!-- .container -->
